@@ -659,3 +659,12 @@ function endGame(who) {
     setTimeout(restartGame, 800);
 }
 
+function updateDateTime() {
+    const datetimeElement = document.getElementById("datetime");
+    function refreshTime() {
+      const now = new Date();
+      datetimeElement.innerText = now.toLocaleString();
+    }
+    setInterval(refreshTime, 1000);
+    refreshTime();
+  }

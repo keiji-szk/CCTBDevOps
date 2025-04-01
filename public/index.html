@@ -17,9 +17,10 @@
 
 </head>
 
-<body onload="initialize()">
+<body onload="initialize(); updateDateTime();">
   <img class="rounded" src="https://guscanada.com/wp-content/uploads/2021/09/CCTB_logo_1_RGB.png">
   <h1>Tic-Tac-Toe</h1>
+  <p id="datetime" style="font-size: 18px; font-weight: bold;"></p>
   <table id="table_game">
     <tr>
       <td class="td_game">
@@ -100,6 +101,7 @@
     </div>
   </div>
 </body>
+
 <script src="js.js"></script>
 
 </html>
